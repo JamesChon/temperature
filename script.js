@@ -9,6 +9,6 @@ function convertTemperature() {
     console.log("Temperature in Fahrenheit: " + temperatureInFahrenheit.toFixed(2));
 
     // Update the result display
-    var resultMessage = "The conversion of Celsius " + temperatureInCelsius.toFixed(2) + " to Fahrenheitis " + temperatureInFahrenheit.toFixed(2) + " °F";
+    var resultMessage = "The conversion of Celsius " + temperatureInCelsius.toFixed(0) + "°" + " to Fahrenheit is " + temperatureInFahrenheit.toFixed(1) + " °F";
     document.getElementById("result").innerText =resultMessage;
 }
