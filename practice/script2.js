@@ -12,6 +12,9 @@ function decrease(){
     counter--;
     console.log(counter);
 }
+if(counter = 5){
+    console.log("Hurray");
+}
 
 // 2) call/run/execute the function
 

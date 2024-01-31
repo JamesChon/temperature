@@ -7,20 +7,37 @@
     <link rel="stylesheet" href="styles.css">
 </head>
     <body>
+        <!-- previous assignment -->
         <!-- Emojis -->
-        <div class="emoji"> 
+        <!-- <div class="emoji"> 
             <div>🌤️</div>
             <div>🌥️</div>
             <div>🌤️</div>
+        </div> -->
+
+        <!-- <h1>Convert Celsius to Fahrenheit</h1>
+        
+        <button onclick="convertTemperature()">Convert Celsius  to Fahrenheit</button>  -->
+        <div class="emoji">
+            <div>❄️</div>
+            <div>🌡️</div>
+            <div>🌋</div>
         </div>
-        <!-- Title -->
-        <h1>Convert Celsius to Fahrenheit</h1>
-        <!-- Button -->
-        <button onclick="convertTemperature()">Convert Celsius  to Fahrenheit</button>
-        <!-- Results -->
-        <div id="result"></div>
+        <h2>Temperature Converter</h2>
 
+        <label for="temperature">Enter temperature:</label>
+        <input type="number" id="temperature" placeholder="Enter temperature">
+        
+        <label for="scale">Select scale:</label>
+        <select id="scale">
+            <option value="C">Celsius</option>
+            <option value="F">Fahrenheit</option>
+        </select>
+    
+        <button onclick="convertTemperature()">Convert</button>
+        <p id="result"></p>
+        
         <script src="script.js"></script>
-
+        
     </body>
 </html> 
