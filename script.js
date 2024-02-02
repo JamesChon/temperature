@@ -14,9 +14,12 @@
 //     document.getElementById("result").innerText = result;
 // }
 
+
+// Assignment 3
+
 function convertTemperature() {
     // Get user input
-    let userInput = Number(document.getElementById("temperature").value);
+    const userInput = Number(document.getElementById("temperature").value);
     let scale = document.getElementById("scale").value;
     
     // Check the scale parameter
@@ -32,3 +35,25 @@ function convertTemperature() {
     document.getElementById("result").innerHTML = userInput + "°" + " Fahrenheit is equal to " + convertedTemperature.toFixed(1) +  "°" + " Celsius.";
     } 
 }
+
+function convertTemperatureRange(startValue, endValue, scale) {
+    for (let temperature = startValue; temperature <= endValue; temperature++) {
+        let convertedTemperature;
+
+        if (scale === "C") {
+            convertedTemperature = (temperature * 9/5) + 32;
+            document.write(`<p>${temperature}°C is ${convertedTemperature.toFixed(1)}°F</p>`);
+        } else if (scale === "F") {
+            convertedTemperature = (temperature - 32) * 5/9;
+            document.write(`<p>${temperature}°F is ${convertedTemperature.toFixed(1)}°C</p>`);
+        }
+    }
+}
+
+// Get user inputs
+const startTemperature = Number(prompt("Enter the starting temperature:"));
+const endTemperature = Number(prompt("Enter the ending temperature:"));
+const temperatureScale = prompt("Enter the temperature scale (C for Celsius, F for Fahrenheit):").toUpperCase();
+
+// Call the function with user inputs
+convertTemperatureRange(startTemperature, endTemperature, temperatureScale);

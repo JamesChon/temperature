@@ -27,9 +27,11 @@ button {
     border-radius: .5rem;
     cursor: pointer;
 }
+
 #scale {
     text-align: center;
 }
+
 input {
     text-align: center;
 }
